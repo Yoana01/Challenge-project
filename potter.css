@@ -11,11 +11,20 @@ body{
     background-clip:border-box;
     background-position: center-top;
     opacity: 1;
-    transition: opacity 2s ease 0s;  
+    animation: myAnim 30s ease 0s 1 normal forwards;  
 }
-.background:hover{
-    opacity: 0.6;
-}
+@keyframes myAnim {
+	0%,
+	50%,
+	100% {
+	  opacity: 1;
+	}
+  
+	25%,
+	75% {
+	  opacity: 0.5;
+	}
+  }
 .logo {
 	position: absolute;
 	top: 50%;
@@ -24,7 +33,7 @@ body{
 	z-index: 2;
 	width: 100%;
 	opacity: 0;
-	animation: logo 5s ease-out 5s;
+	animation: logo 3s ease-out 5s;
 }
 
 .logo img {
@@ -40,6 +49,10 @@ body{
 	}
 	70% {
 		opacity: 1;
+	}
+	100% {
+		opacity: 1; 
+		transform: translate(-50%, -50%) scale(1);
 	}
 	
 }
