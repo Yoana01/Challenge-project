@@ -11,7 +11,8 @@ body{
     background-clip:border-box;
     background-position: center-top;
     opacity: 1;
-    animation: myAnim 30s ease 0s 1 normal forwards;  
+    /* animation: myAnim 30s ease 0s 1 normal forwards;   */
+	animation: myAnim 8s ease 0s infinite normal forwards;
 }
 @keyframes myAnim {
 	0%,
