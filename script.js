@@ -9,10 +9,10 @@ function fallingLetters(x, y) {
     this.x = x;
     this.y = y;
     this.letters = [];
-    var amount = Math.floor(Math.random() * 50) + 5; // give a value between 5 and 30  
+    var amount = Math.floor(Math.random() * 50) + 5; // give a value between 5 and 50  
     for (i = 0; i < amount; i++) {
 
-        var charNumber = Math.floor(Math.random() * 4000) + 55; // first 35 are space, return...
+        var charNumber = Math.floor(Math.random() * 4000) + 55; // first 55 are space, return...
         this.letters.push(String.fromCharCode(charNumber));
     }
 }

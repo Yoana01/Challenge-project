@@ -1,0 +1,45 @@
+body{
+    background-repeat:no-repeat;
+}
+.background{
+    /* background: #1f1e1e url("/clouds.jpg") center center/cover no-repeat fixed; */
+    width:1920px;
+    height: 1080px;
+    background-image: url(./clouds.jpg);
+    background-repeat:no-repeat;
+    background-size: cover;
+    background-clip:border-box;
+    background-position: center-top;
+    opacity: 1;
+    transition: opacity 2s ease 0s;  
+}
+.background:hover{
+    opacity: 0.6;
+}
+.logo {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	z-index: 2;
+	width: 100%;
+	opacity: 0;
+	animation: logo 5s ease-out 5s;
+}
+
+.logo img {
+	width: inherit;
+  
+}
+
+@keyframes logo {
+	0% {
+		opacity: 1; 
+        /* scale it zoom and fadeing out  */
+		transform: translate(-50%, -50%) scale(2);
+	}
+	70% {
+		opacity: 1;
+	}
+	
+}
